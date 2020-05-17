@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+canvas{
+    width: 70%;
+}
+.cont-drive-clone{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cont-drive-clone .shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.9;
+    z-index: 0;
+}
+
+.cont-drive-clone .cont-canvas{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-drive-clone .head-downlodable{
+    position: relative;
+    z-index: 1;
+}
+
+.cont-drive-clone .cont-canvas .cont-button{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.cont-drive-clone .cont-canvas .cont-button button{
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    outline: none;
+}
+.cont-drive-clone .cont-canvas .cont-button button:hover{
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.cont-drive-clone .head-downlodable {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.cont-drive-clone .head-downlodable i {
+    width: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cont-drive-clone .head-downlodable span {
+    color: #fff;
+}
