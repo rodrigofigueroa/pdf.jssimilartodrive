@@ -3,9 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-canvas{
-    width: 70%;
-}
 .cont-drive-clone{
     position: absolute;
     width: 100%;
@@ -14,6 +11,12 @@ canvas{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    top: 0;
+    left: -300%;
+    transition: .8s all ease;
+}
+.cont-drive-clone.active{
+    left: 0;
 }
 .cont-drive-clone .shadow{
     position: absolute;
@@ -33,8 +36,11 @@ canvas{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
-
+.cont-drive-clone .cont-canvas canvas{
+    width: 41%;
+}
 .cont-drive-clone .head-downlodable{
     position: relative;
     z-index: 1;
@@ -74,6 +80,8 @@ canvas{
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
+    z-index: 5;
+    background: #000;
 }
 
 .cont-drive-clone .head-downlodable i {
